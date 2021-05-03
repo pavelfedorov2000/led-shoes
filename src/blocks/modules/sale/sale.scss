@@ -1,0 +1,13 @@
+.sale {
+    &__title {
+        max-width: 488px;
+    }
+    &__cards {
+        display: flex;
+        overflow-x: scroll;
+        margin: 0 auto;
+        > div {
+            margin: 0 12px;
+        }
+    }
+}

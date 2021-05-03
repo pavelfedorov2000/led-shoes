@@ -1,0 +1,64 @@
+.delivery-payment {
+    &__title {
+        @media (max-width: 679px) {
+            margin-left: 28px;
+        }
+    }
+    // .delivery-payment__inner
+
+    &__inner {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 24px;
+        @media (max-width: 1023px) {
+            grid-template-columns: 1fr;
+            grid-gap: 24px 0;
+        }
+    }
+
+    // .delivery-payment__map
+
+    &__map {
+        height: 343px;
+        @media (max-width: 1023px) {
+            width: 100%;
+            height: 462px;
+        }
+        @media (max-width: 679px) {
+            height: 390px;
+        }
+    }
+
+    // .delivery-payment__content
+
+    &__content {
+        color: #fff;
+        @media (max-width: 679px) {
+            padding-left: 28px;
+            padding-right: 28px;
+        }
+    }
+
+    // .delivery-payment__item
+
+    &__item + &__item {
+        margin-top: 24px;
+    }
+
+    // .delivery-payment__item-title
+
+    &__item-title {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 8px;
+    }
+
+    p {
+        @extend %robo-text;
+    }
+
+    .container {
+        @media (max-width: 679px) {
+            padding: 0;
+        }
+    }
+}

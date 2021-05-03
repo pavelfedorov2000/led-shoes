@@ -1,0 +1,80 @@
+// colors
+$accent: #ffc700;
+$text-color: #23232a;
+$gray-text: rgba(35, 35, 42, 0.5);
+$dark-bg: #30303a;
+//$light: ;
+//$border: ;
+
+$container: 960px;
+$gap: 25px;
+
+%flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+%flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+%pos-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+%pos-center-y {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+%pos-center-xy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+$roboto: 'Roboto', sans-serif;
+
+%text {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+%robo-text {
+    @extend %text;
+    font-family: $roboto;
+}
+
+%roboto-14 {
+    font-family: $roboto;
+    font-size: 14px;
+}
+
+%btn-default {
+    width: 304px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.4s all;
+}
+
+@mixin btn-shadow {
+    box-shadow: 0px 8px 8px rgba(255, 210, 51, 0.16), 0px 8px 24px rgba(255, 217, 84, 0.4);
+    &:hover {
+        box-shadow: none;
+    }
+}

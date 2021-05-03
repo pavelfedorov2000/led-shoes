@@ -1,0 +1,121 @@
+.promo {
+    color: #fff;
+    padding-top: 43px;
+    @media (max-width: 679px) {
+        padding-top: 15px;
+    }
+    // .promo__inner
+
+    &__inner {
+        @extend %flex-row;
+        align-items: center;
+        margin-bottom: 155px;
+        @media (max-width: 1023px) {
+            margin-bottom: 63px;
+        }
+        @media (max-width: 679px) {
+            flex-direction: column;
+        }
+    }
+
+    // .promo__content
+
+    &__content {
+        width: 431px;
+        flex-shrink: 0;
+        @media (max-width: 1023px) {
+            width: 304px;
+        }
+        @media (max-width: 679px) {
+            width: 100%;
+            order: 2;
+        }
+    }
+
+    // .promo__title
+
+    &__title {
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 24px;
+        @media (max-width: 1023px) {
+            font-size: 26px;
+            line-height: 38px;
+        }
+        @media (max-width: 679px) {
+            margin-bottom: 16px;
+        }
+    }
+
+    // .promo__subtitle
+
+    &__subtitle {
+        max-width: 386px;
+        @extend %robo-text;
+        margin-bottom: 32px;
+    }
+
+    // .promo__img
+
+    &__img {
+        @media (max-width: 679px) {
+            order: 1;
+        }
+    }
+
+    &__btn {
+        @media (max-width: 679px) {
+            width: 264px;
+        }
+    }
+
+    // .promo__benefits
+
+    &__benefits {
+        background-color: $dark-bg;
+        padding: 22px 0;
+        @media (max-width: 1023px) {
+            padding: 28px 0;
+        }
+    }
+
+    &__benefits-list {
+        @extend %flex-row;
+        @media (max-width: 1023px) {
+            flex-wrap: wrap;
+            grid-row-gap: 32px;
+        }
+        @media (max-width: 575px) {
+            grid-row-gap: 24px;
+        }
+    }
+
+    // .promo__item-img
+
+    &__item-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    // .promo__item
+
+    &__item {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        @media (max-width: 1023px) {
+            width: 50%;
+        }
+        @media (max-width: 575px) {
+            width: 100%;
+        }
+    }
+
+    // .promo__item-descr
+
+    &__item-descr {
+        width: 160px;
+        @extend %robo-text;
+        margin-left: 16px;
+    }
+}

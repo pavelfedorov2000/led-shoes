@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html')
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="overlay">
+            @@include('../blocks/modules/burger-menu/_burger-menu.html')
+        </div>
+
+        <header class="header">
+            <nav class="menu" data-da=".burger-menu, 1024, 3">
+                <ul class="menu__list container">
+                    <li class="menu__item">
+                        <a href="#size" class="menu__link">Как подобрать размер</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#delivery-payment" class="menu__link">Оплата и доставка</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#reviews" class="menu__link">Отзывы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#faq" class="menu__link">Частые вопросы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#contacts" class="menu__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            @@include('../blocks/modules/head-foot/_head-foot.html')
+        </header>
+
+        <main class="main">
+            @@include('../blocks/modules/promo/_promo.html')
+
+            @@include('../blocks/modules/about/_about.html')
+
+            <section id="sale-1" class="section sale">
+                <div class="container">
+                    <h2 class="section__title sale__title">
+                        Распродажа светящихся
+                        роликовых led-кроссовок
+                    </h2>
+                </div>
+                @@include('../blocks/modules/sale/_sale.html')
+            </section>
+
+            <section id="sale-2" class="section sale">
+                <div class="container">
+                    <h2 class="section__title sale__title">
+                        Распродажа светящихся
+                        led кроссовок без роликов
+                    </h2>
+                </div>
+                @@include('../blocks/modules/sale/_sale.html')
+            </section>
+
+            @@include('../blocks/modules/benefits/_benefits.html')
+
+            @@include('../blocks/modules/action/_action.html')
+
+            @@include('../blocks/modules/size/_size.html')
+
+            @@include('../blocks/modules/delivery&payment/_delivery&payment.html')
+
+            <section class="section promotion">
+                <div class="container">
+                    <h2 class="section__title">
+                        Акции на кроссовки
+                    </h2>
+                    <div class="promotion__cards grid">
+                        @@include('../blocks/modules/catalog-card/_catalog-card.html')
+                        @@include('../blocks/modules/catalog-card/_catalog-card.html')
+                        @@include('../blocks/modules/catalog-card/_catalog-card.html')
+                        @@include('../blocks/modules/catalog-card/_catalog-card.html')
+                        @@include('../blocks/modules/catalog-card/_catalog-card.html')
+                        @@include('../blocks/modules/catalog-card/_catalog-card.html')
+                        @@include('../blocks/modules/catalog-card/_catalog-card.html')
+                        @@include('../blocks/modules/catalog-card/_catalog-card.html')
+                    </div>
+                </div>
+            </section>
+
+            @@include('../blocks/modules/reviews/_reviews.html')
+
+            @@include('../blocks/modules/faq/_faq.html')
+
+            @@include('../blocks/modules/action/_action.html')
+
+            @@include('../blocks/modules/contacts/_contacts.html')
+
+            <div class="tabs">
+                <a href="#tab-1" class="tab tab--active"></a>
+                <a href="#tab-2" class="tab"></a>
+                <a href="#tab-3" class="tab"></a>
+            </div>
+            <div id="tab-1" class="tabs-content"></div>
+        </main>
+
+        <footer class="head-foot">
+            @@include('../blocks/modules/head-foot/_head-foot.html')
+        </footer>
+
+        @@include('../blocks/modules/popups/_popups.html')
+
+    </div>
+
+    @@include('_js.html')
+
+</body>
+
+</html>

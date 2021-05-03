@@ -1,0 +1,38 @@
+.faq {
+    margin-bottom: 107px;
+    @media (max-width: 679px) {
+        display: none;
+    }
+
+    // .faq__item
+
+    &__item {
+        &--active {
+            filter: drop-shadow(0px 8px 16px #131315);
+        }
+    }
+
+    &__item + &__item {
+        border-top: 1px solid #1a1a1f;
+    }
+
+    // .faq__question
+
+    &__question {
+        padding: 19px 24px;
+        background-color: $dark-bg;
+        @extend %text;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    // .faq__answer
+
+    &__answer {
+        display: none;
+        background-color: #fff;
+        padding: 16px 24px;
+        @extend %roboto-14;
+        line-height: 20px;
+    }
+}
