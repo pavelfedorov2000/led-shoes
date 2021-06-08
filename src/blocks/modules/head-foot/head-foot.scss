@@ -1,20 +1,17 @@
 .head-foot {
     background-color: $dark-bg;
     color: #fff;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 19px 0;
     // .head-foot__inner
 
     &__inner {
-        @extend %flex-row;
-        align-items: center;
+        @extend %flex-row-center;
     }
 
     // .head-foot__city
 
     &__city {
-        font-family: $roboto;
-        font-size: 14px;
+        @extend %roboto-14;
         line-height: 20px;
         margin-left: 86px;
         @media (max-width: 1023px) {
@@ -23,8 +20,7 @@
     }
 
     &__city-name {
-        font-size: 18px;
-        line-height: 26px;
+        @extend %text;
         font-weight: 700;
     }
 
@@ -46,19 +42,5 @@
         @media (max-width: 679px) {
             display: none;
         }
-    }
-}
-
-.call {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 48px;
-    color: #fff;
-    &__img {
-        width: 32px;
-        height: 32px;
-        margin-right: 16px;
     }
 }

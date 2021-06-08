@@ -7,8 +7,7 @@
     // .promo__inner
 
     &__inner {
-        @extend %flex-row;
-        align-items: center;
+        @extend %flex-row-center;
         margin-bottom: 155px;
         @media (max-width: 1023px) {
             margin-bottom: 63px;
@@ -58,6 +57,8 @@
     // .promo__img
 
     &__img {
+        max-width: 100%;
+        height: auto;
         @media (max-width: 679px) {
             order: 1;
         }
@@ -100,8 +101,7 @@
     // .promo__item
 
     &__item {
-        display: flex;
-        align-items: center;
+        @extend %vertical-align;
         color: #fff;
         @media (max-width: 1023px) {
             width: 50%;

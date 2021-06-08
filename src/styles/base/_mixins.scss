@@ -1,0 +1,6 @@
+@mixin btn-shadow {
+    box-shadow: $shadow;
+    &:hover {
+        box-shadow: none;
+    }
+}

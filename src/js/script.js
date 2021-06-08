@@ -1,7 +1,5 @@
 $(function () {
 
-    @@include('libs/jquery.magnific-popup.js')
-
     @@include('../blocks/modules/burger/burger.js')
 
     @@include('../blocks/modules/popups/popup.js')
@@ -16,6 +14,7 @@ $(function () {
 
     @@include('_map.js')
 
+    @@include('_validate.js')
 });
 
 

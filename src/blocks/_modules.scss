@@ -1,8 +1,8 @@
 // ============== COMMON ============= //
+@import 'modules/menu/menu';
 @import 'modules/head-foot/head-foot';
 @import 'modules/burger/burger';
 @import 'modules/burger-menu/burger-menu';
-//@import 'modules/footer/footer';
 @import 'modules/popups/popup';
 @import 'modules/catalog-card/catalog-card';
 
@@ -13,6 +13,7 @@
 @import 'modules/size/size';
 @import 'modules/action/action';
 @import 'modules/delivery&payment/delivery&payment';
+@import 'modules/promotion/promotion';
 @import 'modules/sale/sale';
 @import 'modules/reviews/reviews';
 @import 'modules/faq/faq';

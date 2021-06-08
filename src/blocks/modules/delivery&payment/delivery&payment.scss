@@ -47,13 +47,15 @@
     // .delivery-payment__item-title
 
     &__item-title {
-        font-size: 18px;
-        line-height: 26px;
+        @extend %text;
         margin-bottom: 8px;
     }
 
     p {
         @extend %robo-text;
+        @media (max-width: 679px) {
+            line-height: 24px;
+        }
     }
 
     .container {

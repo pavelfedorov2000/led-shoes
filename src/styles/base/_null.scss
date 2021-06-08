@@ -19,9 +19,6 @@ body {
     font-style: normal;
     font-weight: 400;
     color: $text-color;
-    &._lock {
-        overflow: hidden;
-    }
 }
 
 h1,
@@ -66,9 +63,4 @@ textarea {
 
 address {
     font-style: normal;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }

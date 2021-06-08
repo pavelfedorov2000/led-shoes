@@ -1,0 +1,38 @@
+.form {
+    // .form__item
+
+    &__item + &__item {
+        margin-top: 16px;
+    }
+
+    // .form__label
+
+    &__label {
+        display: block;
+        @extend %text;
+        color: #2f2f2f;
+        margin-bottom: 4px;
+    }
+
+    // .form__input
+
+    &__input {
+        width: 100%;
+        border: 1px solid #070709;
+        border-radius: 4px;
+        padding: 10px 16px;
+        @extend %roboto-14;
+        line-height: 20px;
+        color: rgba(35, 35, 42, 0.5);
+        &::placeholder {
+            color: rgba(35, 35, 42, 0.5);
+        }
+    }
+
+    // .form__btn
+
+    &__btn {
+        width: 100%;
+        margin-top: 32px;
+    }
+}

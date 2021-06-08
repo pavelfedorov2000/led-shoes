@@ -11,25 +11,7 @@
         </div>
 
         <header class="header">
-            <nav class="menu" data-da=".burger-menu, 1024, 3">
-                <ul class="menu__list container">
-                    <li class="menu__item">
-                        <a href="#size" class="menu__link">Как подобрать размер</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#delivery-payment" class="menu__link">Оплата и доставка</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#reviews" class="menu__link">Отзывы</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#faq" class="menu__link">Частые вопросы</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#contacts" class="menu__link">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+            @@include('../blocks/modules/menu/_menu.html')
             @@include('../blocks/modules/head-foot/_head-foot.html')
         </header>
 
@@ -91,13 +73,6 @@
             @@include('../blocks/modules/action/_action.html')
 
             @@include('../blocks/modules/contacts/_contacts.html')
-
-            <div class="tabs">
-                <a href="#tab-1" class="tab tab--active"></a>
-                <a href="#tab-2" class="tab"></a>
-                <a href="#tab-3" class="tab"></a>
-            </div>
-            <div id="tab-1" class="tabs-content"></div>
         </main>
 
         <footer class="head-foot">

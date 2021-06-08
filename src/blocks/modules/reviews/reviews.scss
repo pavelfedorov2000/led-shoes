@@ -37,7 +37,7 @@
 
     &__item {
         height: fit-content;
-        background: #ffffff;
+        background-color: #ffffff;
         border-radius: 8px;
         padding: 24px 24px 16px 24px;
         margin: 0 12px;
@@ -64,8 +64,7 @@
     // .reviews-slider__item-head
 
     &__item-head {
-        display: flex;
-        align-items: center;
+        @extend %vertical-align;
         margin-bottom: 16px;
     }
 
@@ -94,14 +93,13 @@
     // .reviews-slider__item-info
 
     &__item-info {
-        line-height: 26px;
         margin-left: 24px;
     }
 
     // .reviews-slider__item-name
 
     &__item-name {
-        font-size: 18px;
+        @extend %text;
         color: #1a1a1f;
         margin-bottom: 4px;
     }
@@ -109,13 +107,12 @@
     // .reviews-slider__item-city
 
     &__item-city {
-        font-family: $roboto;
-        font-size: 14px;
+        @extend %roboto-14;
+        line-height: 26px;
     }
 
     p {
         @extend %roboto-14;
-        color: $text-color;
         line-height: 20px;
         margin-bottom: 24px;
     }

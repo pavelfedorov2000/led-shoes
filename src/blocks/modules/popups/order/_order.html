@@ -1,20 +1,24 @@
-<div class="popup order-popup mfp-hide">
-    <h4 class="title popup__title">
-        Заявка<br>
-        на светящиеся
-        кросовки
-    </h4>
-    <form class="form" action="#">
-        <div class="form__item">
-            <label for="name" class="title form__label">Ваше имя</label>
-            <input type="text" name="name" class="form__input" placeholder="Ваше имя">
-        </div>
-        <div class="form__item">
-            <label for="phone" class="title form__label">Номер телефона</label>
-            <input type="tel" name="phone" class="form__input" placeholder="+7 (___) ___-__-__">
-        </div>
-        <button class="btn form__btn" type="submit">
-            Оформить заказ
-        </button>
-    </form>
+<div id="order-popup" class="popup mini-popup mfp-hide">
+    <div class="mini-popup__inner">
+        <h4 class="title popup__title">
+            Заявка<br>
+            на светящиеся
+            кросовки
+        </h4>
+        <form class="form" action="#">
+            <div class="form__item">
+                <label for="order-popup-name" class="title form__label">Ваше имя</label>
+                <input type="text" name="name" id="order-popup-name" class="form__input" placeholder="Ваше имя"
+                    required>
+            </div>
+            <div class="form__item">
+                <label for="order-popup-phone" class="title form__label">Номер телефона</label>
+                <input type="tel" name="phone" id="order-popup-phone" class="form__input"
+                    placeholder="+7 (___) ___-__-__" required>
+            </div>
+            <button class="btn form__btn" type="submit">
+                Отправить
+            </button>
+        </form>
+    </div>
 </div>

@@ -1,3 +1,7 @@
+@import './vars';
+@import './mixins';
+@import './null';
+
 .container {
     width: $container + $gap * 2;
     max-width: 100%;
@@ -13,73 +17,13 @@
     background-color: #000;
 }
 
-.section {
-    margin-top: 96px;
-    @media (max-width: 679px) {
-        margin-top: 64px;
-    }
-    &__title {
-        @extend .title;
-        font-size: 32px;
-        line-height: 40px;
-        text-align: center;
-        color: #fff;
-        margin: 0 auto 64px;
-        @media (max-width: 1023px) {
-            font-size: 26px;
-            line-height: 38px;
-            text-align: left;
-            margin-left: 0;
-            margin-bottom: 40px;
-        }
-    }
-}
-
 .grid {
     display: grid;
-}
-
-.promotion {
-    &__cards {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 32px 24px;
-        @media (max-width: 1023px) {
-            width: 222px * 2 + 24px;
-            grid-template-columns: repeat(2, 1fr);
-        }
-        @media (max-width: 530px) {
-            grid-template-columns: 1fr;
-        }
-    }
-}
-
-.ymaps-2-1-78-balloon {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
-    padding: 0 !important;
-    &__close {
-        display: none;
-    }
-    &__tail {
-        display: none !important;
-    }
-    &__content {
-        width: 223px !important;
-        border-radius: 8px;
-        margin-right: 0 !important;
-        padding: 8px 0 !important;
-        font: 18px/26px 'Roboto', sans-serif !important;
-        color: #1a1a1f !important;
-        text-align: center;
-        > ymaps {
-            margin: 0 auto;
-        }
-    }
 }
 
 .slick-slide {
     outline: none;
 }
 
-@import '../components/titles';
-@import '../components/buttons';
+@import '../components/components';
+@import '../custom/custom';

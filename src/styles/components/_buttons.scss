@@ -2,6 +2,10 @@
     @extend %btn-default;
     background-color: $accent;
     @include btn-shadow;
+    &:active {
+        background-color: #ebb700;
+        box-shadow: none;
+    }
 }
 
 .order-btn {
@@ -13,5 +17,9 @@
     &:hover {
         background-color: $accent;
         color: $text-color;
+    }
+    &:active {
+        background-color: #ebb700;
+        box-shadow: none;
     }
 }

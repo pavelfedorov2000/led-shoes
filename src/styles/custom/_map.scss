@@ -1,0 +1,22 @@
+.ymaps-2-1-78-balloon {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+    padding: 0 !important;
+    &__close {
+        display: none;
+    }
+    &__tail {
+        display: none !important;
+    }
+    &__content {
+        width: 223px !important;
+        border-radius: 8px;
+        margin-right: 0 !important;
+        padding: 8px 0 !important;
+        font: 18px/26px 'Roboto', sans-serif !important;
+        color: #1a1a1f !important;
+        text-align: center;
+        > ymaps {
+            margin: 0 auto;
+        }
+    }
+}
