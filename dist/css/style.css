@@ -910,7 +910,8 @@ img.mfp-img {
 }
 
 .about__item,
-.benefits__item {
+.benefits__item,
+.catalog-card__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1596,9 +1597,15 @@ button.mfp-close {
 
 .catalog-card {
   width: 222px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  background-color: #ffffff;
+  min-height: 376px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
   -webkit-box-shadow: 0px 8px 16px #131315;
           box-shadow: 0px 8px 16px #131315;
   border-radius: 8px;
@@ -1607,7 +1614,6 @@ button.mfp-close {
   -o-transition: 0.4s box-shadow;
   transition: 0.4s box-shadow;
   transition: 0.4s box-shadow, 0.4s -webkit-box-shadow;
-  cursor: pointer;
 }
 
 .catalog-card:hover {
@@ -1617,7 +1623,9 @@ button.mfp-close {
 
 .catalog-card__img {
   width: 100%;
-  height: 192px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 192px;
+          flex: 0 0 192px;
 }
 
 .catalog-card__img img {
@@ -1628,6 +1636,13 @@ button.mfp-close {
 }
 
 .catalog-card__content {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  height: calc(100% - 192px);
   padding: 16px;
 }
 
@@ -1637,6 +1652,8 @@ button.mfp-close {
 
 .catalog-card__category {
   line-height: 26px;
+  margin-top: 0;
+  margin-bottom: auto;
 }
 
 .catalog-card__prices {
@@ -1647,7 +1664,6 @@ button.mfp-close {
       -ms-flex-align: end;
           align-items: flex-end;
   margin-bottom: 8px;
-  margin-top: auto;
 }
 
 .catalog-card__new-price {
@@ -1662,6 +1678,7 @@ button.mfp-close {
 }
 
 .catalog-card__btn {
+  display: block;
   width: 100%;
   padding: 3px;
   background-color: #ffc700;
@@ -1976,22 +1993,12 @@ button.mfp-close {
   max-width: 488px;
 }
 
-.sale__cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow-x: scroll;
-  margin: 0 auto;
+.sale__cards .slick-list {
+  overflow: visible;
 }
 
-.sale__cards::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 0;
-  height: 0;
-}
-
-.sale__cards > div {
-  margin: 0 12px;
+.sale__cards .catalog-card {
+  margin-right: 24px;
 }
 
 .reviews__slider .slick-list {

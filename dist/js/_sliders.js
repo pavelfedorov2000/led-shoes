@@ -1,3 +1,18 @@
+$('.sale__cards').slick({
+    slidesToShow: 6,
+    arrows: false,
+    centerMode: true,
+    variableWidth: true,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                centerMode: false,
+            }
+        },
+    ]
+});
+
 $('.reviews-slider').slick({
     slidesToShow: 3,
     arrows: false,
@@ -10,19 +25,6 @@ $('.reviews-slider').slick({
         },
     ]
 });
-
-/* window.addEventListener("resize", function () {
-    if (window.innerWidth <= 1023) {
-        $('.reviews-slider').slick('unslick');
-        sliderIsLive = false;
-    }
-    else {
-        if (sliderIsLive) {
-            $('.reviews-slider').slick();
-            sliderIsLive = true;
-        }
-    }
-}); */
 
 $('.product-card__slider').slick({
     slidesToShow: 1,

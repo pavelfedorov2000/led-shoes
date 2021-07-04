@@ -10,16 +10,3 @@ $('.reviews-slider').slick({
         },
     ]
 });
-
-/* window.addEventListener("resize", function () {
-    if (window.innerWidth <= 1023) {
-        $('.reviews-slider').slick('unslick');
-        sliderIsLive = false;
-    }
-    else {
-        if (sliderIsLive) {
-            $('.reviews-slider').slick();
-            sliderIsLive = true;
-        }
-    }
-}); */
