@@ -1,30 +1,36 @@
 .burger-btn {
     display: none;
+
     @media (max-width: 1023px) {
         display: block;
         position: relative;
-        width: 24px;
-        height: 28px;
+        width: 2.4rem;
+        height: 2.8rem;
         cursor: pointer;
+
         &:before,
         &:after,
         span {
             position: absolute;
             left: 0;
             width: 100%;
-            height: 4px / 28px * 100%;
+            height: 4 / 28 * 100%;
             background-color: $accent;
         }
+
         &:before,
         &:after {
             content: '';
         }
+
         &:before {
             top: 0;
         }
+
         &:after {
             bottom: 0;
         }
+
         span {
             top: 50%;
             transform: translateY(-50%);

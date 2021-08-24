@@ -1,20 +1,25 @@
 .menu {
     background-color: #cacaca;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
     @media (max-width: 1023px) {
         background-color: transparent;
         padding: 0;
-        margin-bottom: 32px;
+        margin-bottom: 3.2rem;
     }
+
     @media (max-width: 679px) {
-        margin-bottom: 40px;
+        margin-bottom: 4rem;
     }
+
     &__item {
         display: inline-block;
+
         @media (max-width: 1023px) {
             display: block;
         }
+
         &:nth-child(1),
         &:nth-child(4) {
             @media (max-width: 679px) {
@@ -22,37 +27,46 @@
             }
         }
     }
-    &__item + &__item {
-        margin-left: 20px;
+
+    &__item+&__item {
+        margin-left: 2rem;
+
         @media (max-width: 1023px) {
             margin-left: 0;
-            margin-top: 32px;
+            margin-top: 3.2rem;
         }
     }
+
     &__link {
         position: relative;
         @extend %roboto-14;
-        line-height: 20px;
+        line-height: 2rem;
+
         @media (max-width: 1023px) {
-            font-size: 16px;
+            font-size: 1.6rem;
             color: #fff;
         }
+
         &:after {
             content: '';
             position: absolute;
             width: 0%;
-            height: 1px;
+            height: 0.1rem;
             background-color: $text-color;
             left: 0;
             right: 0;
-            bottom: -3px;
+            bottom: -0.3rem;
             transition: 0.4s width;
         }
-        @media(min-width: 991px) {
-            &:hover:after {
-                width: 100%;
+
+        @media (any-hover: hover) {
+            &:hover {
+                &:after {
+                    width: 100%;
+                }
             }
         }
+
         &:active:after {
             width: 100%;
         }

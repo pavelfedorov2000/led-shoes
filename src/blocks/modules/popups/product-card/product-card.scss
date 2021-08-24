@@ -1,19 +1,23 @@
 .product-card {
-    width: 796px;
-    padding: 24px;
+    width: 79.6rem;
+    padding: 2.4rem;
+
     @media (max-width: 1023px) {
-        width: 730px;
-        padding: 32px 25px 84px;
+        width: 73rem;
+        padding: 3.2rem 2.5rem 8.4rem;
     }
+
     @media (max-width: 679px) {
         width: 100%;
-        padding-top: 58px;
+        padding-top: 5.8rem;
     }
+
     // .product-card__inner
 
     &__inner {
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 25px;
+        grid-gap: 2.2rem;
+
         @media (max-width: 679px) {
             grid-template-columns: 100%;
             grid-gap: 0;
@@ -23,13 +27,15 @@
     // .product-card__gallery
 
     &__gallery {
-        width: 362px;
+        width: 36.2rem;
+
         @media (max-width: 1023px) {
-            width: 303px;
+            width: 30.3rem;
         }
+
         @media (max-width: 679px) {
             width: 100%;
-            margin-bottom: 19px;
+            margin-bottom: 1.9rem;
         }
     }
 
@@ -37,7 +43,8 @@
 
     &__slider {
         width: 100%;
-        margin-bottom: 16px;
+        margin-bottom: 1.6rem;
+
         .slick-track {
             margin: 0;
         }
@@ -47,17 +54,20 @@
 
     &__slider-item {
         height: 100%;
+
         @media (max-width: 1023px) {
-            height: 248px;
+            height: 24.8rem;
         }
+
         @media (max-width: 679px) {
-            height: 215px;
+            height: 21.5rem;
         }
+
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 8px;
+            border-radius: 0.8rem;
         }
     }
 
@@ -70,19 +80,22 @@
     // .product-card__nav-slider-item
 
     &__nav-slider-item {
-        margin-right: 14px;
+        margin-right: 1.4rem;
         cursor: pointer;
+
         @media (max-width: 1023px) {
-            margin-right: 12px;
+            margin-right: 1.2rem;
         }
+
         @media (max-width: 679px) {
-            margin-right: 10px;
+            margin-right: 1rem;
         }
+
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 8px;
+            border-radius: 0.8rem;
         }
     }
 
@@ -99,7 +112,7 @@
     &__name {
         @extend %title-24;
         color: #2f2f2f;
-        margin-bottom: 24px;
+        margin-bottom: 2.4rem;
     }
 
     // .product-card__prices
@@ -107,12 +120,12 @@
     &__prices {
         display: flex;
         align-items: flex-end;
-        margin-bottom: 32px;
+        margin-bottom: 3.2rem;
     }
 
     &__new-price {
-        font-size: 32px;
-        line-height: 32px;
+        font-size: 3.2rem;
+        line-height: 3.2rem;
         color: #2f2f2f;
     }
 
@@ -120,7 +133,8 @@
         @extend %robo-text;
         color: rgba(26, 26, 31, 0.5);
         text-decoration: line-through;
-        margin-left: 16px;
+        margin-left: 1.6rem;
+
         @media (max-width: 679px) {
             display: none;
         }
@@ -130,6 +144,7 @@
 
     &__features {
         color: #1a1a1f;
+
         @media (max-width: 679px) {
             order: 2;
         }
@@ -139,15 +154,16 @@
 
     &__features-title {
         @extend %text;
-        margin-bottom: 8px;
+        margin-bottom: 0.8rem;
     }
 
     // .product-card__features-item
 
     &__features-item {
         @extend %robo-text;
+
         @media (max-width: 1023px) {
-            font-size: 16px;
+            font-size: 1.6rem;
         }
     }
 
@@ -155,7 +171,7 @@
 
     &__bonus {
         @media (max-width: 679px) {
-            margin: 23px 0 32px;
+            margin: 2.3rem 0 3.2rem;
         }
     }
 
@@ -163,36 +179,37 @@
 
     &__gift {
         @extend %vertical-align;
-        margin-bottom: 24px;
+        margin-bottom: 2.4rem;
     }
 
     // .product-card__gift-img
 
     &__gift-img {
-        width: 71px;
-        height: 71px;
+        width: 7.1rem;
+        height: 7.1rem;
     }
 
     // .product-card__gift-descr
 
     &__gift-descr {
-        margin-left: 16px;
+        margin-left: 1.6rem;
     }
 
     // .product-card__gift-list
 
     &__gift-list {
         dt {
-            margin-bottom: 8px;
+            margin-bottom: 0.8rem;
         }
+
         dd {
             font-family: $roboto;
             margin-left: 0;
-            margin-bottom: 16px;
+            margin-bottom: 1.6rem;
         }
     }
 
     button.mfp-close {
-        right: 24px;
+        right: 2.4rem;
     }
 }

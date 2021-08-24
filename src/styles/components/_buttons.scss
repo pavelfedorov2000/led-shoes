@@ -2,6 +2,7 @@
     @extend %btn-default;
     background-color: $accent;
     @include btn-shadow;
+
     &:active {
         background-color: #ebb700;
         box-shadow: none;
@@ -12,12 +13,16 @@
     @extend %btn-default;
     background-color: transparent;
     color: $accent;
-    border: 1px solid #ffc700;
+    border: 0.1rem solid #ffc700;
     filter: drop-shadow(0px 8px 8px rgba(255, 210, 51, 0.16)), drop-shadow(0px 8px 24px rgba(255, 217, 84, 0.4));
-    &:hover {
-        background-color: $accent;
-        color: $text-color;
+
+    @media (any-hover: hover) {
+        &:hover {
+            background-color: $accent;
+            color: $text-color;
+        }
     }
+
     &:active {
         background-color: #ebb700;
         box-shadow: none;

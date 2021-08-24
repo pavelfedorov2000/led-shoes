@@ -1,21 +1,24 @@
 .section {
-    margin-top: 96px;
+    padding-top: 9.6rem;
+
     @media (max-width: 679px) {
-        margin-top: 64px;
+        padding-top: 6.4rem;
     }
+
     &__title {
         @extend .title;
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 3.2rem;
+        line-height: 4rem;
         text-align: center;
         color: #fff;
-        margin: 0 auto 64px;
+        margin: 0 auto 6.4rem;
+
         @media (max-width: 1023px) {
-            font-size: 26px;
-            line-height: 38px;
+            font-size: 2.6rem;
+            line-height: 3.8rem;
             text-align: left;
             margin-left: 0;
-            margin-bottom: 40px;
+            margin-bottom: 4rem;
         }
     }
 }

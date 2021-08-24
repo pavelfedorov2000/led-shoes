@@ -2,17 +2,20 @@
     position: relative;
     background-color: #fff;
     box-shadow: 0px 8px 16px #131315;
-    border-radius: 8px;
+    border-radius: 0.8rem;
     max-width: 100%;
     margin: 0 auto;
+
     &__title {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 2.4rem;
+        line-height: 3.2rem;
     }
+
     &__text {
         @extend %roboto-14;
-        line-height: 26px;
+        line-height: 2.6rem;
     }
+
     @media (max-width: 575px) {
         width: 100%;
         border-radius: 0;
@@ -20,28 +23,32 @@
 }
 
 .mini-popup {
-    width: 302px;
+    width: 30.2rem;
+
     @media (max-width: 575px) {
-        width: 359px;
+        width: 35.9rem;
     }
+
     &__inner {
-        width: 239px;
+        width: 23.9rem;
         margin: 0 auto;
     }
 }
 
 #success {
-    padding: 64px 40px;
+    padding: 6.4rem 4rem;
     text-align: center;
+
     .popup__title {
-        margin-bottom: 16px;
+        margin-bottom: 1.6rem;
     }
 }
 
 #order-popup {
-    padding: 24px 32px 32px 32px;
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+
     .popup__title {
-        margin-bottom: 24px;
+        margin-bottom: 2.4rem;
     }
 }
 

@@ -1,23 +1,26 @@
 .action {
-    height: 176px;
+    height: 17.6rem;
     background-color: $dark-bg;
-    border-top: 2px solid $accent;
-    border-bottom: 2px solid $accent;
-    box-shadow: 0px 8px 32px #131315;
-    margin-bottom: 60px;
+    border-top: 0.2rem solid $accent;
+    border-bottom: 0.2rem solid $accent;
+    box-shadow: 0px 8rem 3.2rem #131315;
+    margin-bottom: 6rem;
+
     @media (max-width: 1023px) {
         height: auto;
-        margin-bottom: 52px;
+        margin-bottom: 5.2rem;
     }
 
     &__container {
         position: relative;
         height: 100%;
-        padding-bottom: 56px;
+        padding-bottom: 5.6rem;
         @extend %flex-row;
+
         @media (max-width: 1023px) {
             padding-bottom: 0;
         }
+
         @media (max-width: 679px) {
             flex-direction: column;
         }
@@ -26,20 +29,22 @@
     // .action__title
 
     &__title {
-        width: 488px;
+        width: 48.8rem;
         flex-shrink: 0;
         @extend %title-24;
         color: #fff;
-        margin-top: 24px;
+        margin-top: 2.4rem;
+
         @media (max-width: 1023px) {
-            width: 351px;
-            font-size: 26px;
-            line-height: 38px;
-            margin-top: 32px;
+            width: 35.1rem;
+            font-size: 2.6rem;
+            line-height: 3.8rem;
+            margin-top: 3.2rem;
         }
+
         @media (max-width: 679px) {
-            font-size: 18px;
-            line-height: 26px;
+            font-size: 1.8rem;
+            line-height: 2.6rem;
         }
     }
 
@@ -47,10 +52,11 @@
 
     &__btn {
         position: absolute;
-        left: 25px;
-        bottom: -22px;
+        left: 2.5rem;
+        bottom: -2.2rem;
+
         @media (max-width: 679px) {
-            width: 264px;
+            width: 26.4rem;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -59,19 +65,22 @@
     // .action__img
 
     &__img {
-        width: 704px;
-        height: 397px;
+        width: 70.4rem;
+        height: 39.7rem;
         max-width: 100%;
-        margin-top: -94px;
+        margin-top: -9.4rem;
+
         @media (max-width: 1023px) {
-            width: 638px;
-            height: 354px;
-            margin-top: -49px;
+            width: 63.8rem;
+            height: 35.4rem;
+            margin-top: -4.9rem;
+            margin-left: -14rem;
         }
+
         @media (max-width: 679px) {
-            width: 493px;
+            width: 49.3rem;
             height: auto;
-            margin: 20px 0;
+            margin: 2rem 0;
         }
     }
 }

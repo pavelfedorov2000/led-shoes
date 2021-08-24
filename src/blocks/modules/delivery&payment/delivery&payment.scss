@@ -1,30 +1,34 @@
 .delivery-payment {
     &__title {
         @media (max-width: 679px) {
-            margin-left: 28px;
+            margin-left: 2.8rem;
         }
     }
+
     // .delivery-payment__inner
 
     &__inner {
         grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 24px;
+        grid-column-gap: 2.4rem;
+
         @media (max-width: 1023px) {
             grid-template-columns: 1fr;
-            grid-gap: 24px 0;
+            grid-gap: 2.4rem 0;
         }
     }
 
     // .delivery-payment__map
 
     &__map {
-        height: 343px;
+        height: 34.3rem;
+
         @media (max-width: 1023px) {
             width: 100%;
-            height: 462px;
+            height: 46.2rem;
         }
+
         @media (max-width: 679px) {
-            height: 390px;
+            height: 39rem;
         }
     }
 
@@ -32,29 +36,31 @@
 
     &__content {
         color: #fff;
+
         @media (max-width: 679px) {
-            padding-left: 28px;
-            padding-right: 28px;
+            padding-left: 2.8rem;
+            padding-right: 2.8rem;
         }
     }
 
     // .delivery-payment__item
 
-    &__item + &__item {
-        margin-top: 24px;
+    &__item+&__item {
+        margin-top: 2.4rem;
     }
 
     // .delivery-payment__item-title
 
     &__item-title {
         @extend %text;
-        margin-bottom: 8px;
+        margin-bottom: 0.8rem;
     }
 
     p {
         @extend %robo-text;
+
         @media (max-width: 679px) {
-            line-height: 24px;
+            line-height: 2.4rem;
         }
     }
 

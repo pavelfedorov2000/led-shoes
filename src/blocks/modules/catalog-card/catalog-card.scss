@@ -1,11 +1,11 @@
 .catalog-card {
-    width: 222px;
-    min-height: 376px;
+    width: 22.2rem;
+    min-height: 37.6rem;
     display: flex !important;
     flex-direction: column;
     background-color: #fff;
     box-shadow: 0px 8px 16px #131315;
-    border-radius: 8px;
+    border-radius: 0.8rem;
     transition: 0.4s box-shadow;
 
     &:hover {
@@ -16,7 +16,7 @@
 
     &__img {
         width: 100%;
-        flex: 0 0 192px;
+        flex: 0 0 19.2rem;
 
         img {
             width: 100%;
@@ -29,8 +29,8 @@
         @extend %flex-col;
         justify-content: space-between;
         flex: 1 1 auto;
-        height: calc(100% - 192px);
-        padding: 16px;
+        height: calc(100% - 19.2rem);
+        padding: 1.6rem;
     }
 
     // .catalog-card__title
@@ -44,7 +44,7 @@
 
     &__category {
         @extend %roboto-14;
-        line-height: 26px;
+        line-height: 2.6rem;
         margin-top: 0;
         margin-bottom: auto;
     }
@@ -54,7 +54,7 @@
     &__prices {
         display: flex;
         align-items: flex-end;
-        margin-bottom: 8px;
+        margin-bottom: 0.8rem;
     }
 
     // .catalog-card__new-price
@@ -68,10 +68,10 @@
 
     &__old-price {
         @extend %roboto-14;
-        line-height: 26px;
+        line-height: 2.6rem;
         color: $gray-text;
         text-decoration: line-through;
-        margin-left: 16px;
+        margin-left: 1.6rem;
     }
 
     // .catalog-card__btn
@@ -80,10 +80,10 @@
         display: block;
         @extend %btn;
         width: 100%;
-        padding: 3px;
+        padding: 0.3rem;
         background-color: $accent;
         @extend %roboto-14;
-        line-height: 26px;
+        line-height: 2.6rem;
         @include btn-shadow;
     }
 }

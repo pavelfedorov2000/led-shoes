@@ -12,30 +12,34 @@
 
 .burger-menu {
     display: none;
+
     @media (max-width: 1023px) {
         display: block;
         position: absolute;
         top: 0;
         right: -100%;
         z-index: 1000;
-        width: 410px;
+        width: 41rem;
         height: 100vh;
         overflow: auto;
         background-color: $dark-bg;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        padding: 32px 24px 32px 32px;
+        padding: 3.2rem 2.4rem 3.2rem 3.2rem;
         transition: 0.4s right;
     }
+
     @media (max-width: 679px) {
-        width: 292px;
-        padding-left: 24px;
-        padding-right: 28px;
+        width: 29.2rem;
+        padding-left: 2.4rem;
+        padding-right: 2.8rem;
     }
+
     &--active {
         @media (max-width: 1023px) {
             right: 0;
         }
     }
+
     // .burger-menu__header
 
     &__header {
@@ -45,8 +49,8 @@
     // .burger-menu__close
 
     &__close {
-        width: 24px;
-        height: 24px;
+        width: 2.4rem;
+        height: 2.4rem;
         cursor: pointer;
     }
 
@@ -54,18 +58,20 @@
 
     &__btn {
         width: 100%;
-        margin: 42px 0;
+        margin: 4.2rem 0;
+
         @media (max-width: 679px) {
-            margin: 36px 0 40px;
+            margin: 3.6rem 0 4rem;
         }
     }
 
     // .burger-menu__links
 
     &__links {
-        margin-bottom: 48px;
+        margin-bottom: 4.8rem;
+
         @media (max-width: 679px) {
-            margin-bottom: 40px;
+            margin-bottom: 4rem;
         }
     }
 
@@ -73,26 +79,28 @@
 
     &__link {
         position: relative;
-        padding-left: 49px;
+        padding-left: 4.9rem;
         display: block;
         font-weight: 700;
         @extend %text;
         color: #fff;
+
         &:before {
             content: '';
             @extend %pos-center-y;
             left: 0;
-            width: 34px;
-            height: 34px;
+            width: 3.4rem;
+            height: 3.4rem;
             border-radius: 50%;
-            border: 8px solid $accent;
+            border: 0.8rem solid $accent;
         }
     }
 
-    &__link + &__link {
-        margin-top: 32px;
+    &__link+&__link {
+        margin-top: 3.2rem;
+
         @media (max-width: 679px) {
-            margin-top: 24px;
+            margin-top: 2.4rem;
         }
     }
 }

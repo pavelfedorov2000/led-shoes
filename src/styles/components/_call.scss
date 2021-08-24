@@ -1,18 +1,20 @@
 .call {
     @extend %vertical-align;
     font-weight: bold;
-    font-size: 18px;
-    line-height: 48px;
+    font-size: 1.8rem;
+    line-height: 4.8rem;
     color: #fff;
     transition: .3s color;
-    @media(min-width: 991px) {
+
+    @media (any-hover: hover) {
         &:hover {
             color: $accent;
         }
     }
+
     &__img {
-        width: 32px;
-        height: 32px;
-        margin-right: 16px;
+        width: 3.2rem;
+        height: 3.2rem;
+        margin-right: 1.6rem;
     }
 }

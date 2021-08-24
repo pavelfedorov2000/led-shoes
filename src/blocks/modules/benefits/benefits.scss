@@ -1,34 +1,40 @@
 .benefits {
     color: #fff;
-    margin-bottom: 192px;
+    margin-bottom: 19.2rem;
+
     @media (max-width: 1023px) {
-        margin-bottom: 127px;
+        margin-bottom: 12.7rem;
     }
+
     @media (max-width: 679px) {
-        margin-bottom: 92px;
+        margin-bottom: 9.2rem;
     }
+
     // .benefits__title
 
     &__title {
-        max-width: 458px;
-        margin-bottom: 30px;
+        max-width: 45.8rem;
+        margin-bottom: 3rem;
+
         @media (max-width: 1023px) {
-            margin-bottom: 40px;
+            margin-bottom: 4rem;
         }
+
         @media (max-width: 679px) {
-            margin-bottom: 24px;
+            margin-bottom: 2.4rem;
         }
     }
 
     // .benefits__items
 
     &__items {
-        width: 910px;
+        width: 91rem;
         @extend %flex-row;
+
         @media (max-width: 1023px) {
             width: 100%;
             flex-wrap: wrap;
-            grid-gap: 40px 45px;
+            grid-gap: 4rem 4.5rem;
         }
     }
 
@@ -36,17 +42,20 @@
 
     &__item {
         @extend %flex-col-center;
+
         @media (max-width: 1023px) {
             flex-direction: row;
         }
+
         &:nth-child(odd) {
             .benefits__item-descr {
-                max-width: 182px;
+                max-width: 18.2rem;
             }
         }
+
         &:nth-child(even) {
             .benefits__item-descr {
-                max-width: 158px;
+                max-width: 15.8rem;
             }
         }
     }
@@ -54,13 +63,14 @@
     // .benefits__item-img
 
     &__item-img {
-        width: 96px;
-        height: 96px;
+        width: 9.6rem;
+        height: 9.6rem;
         flex-shrink: 0;
-        margin-bottom: 24px;
+        margin-bottom: 2.4rem;
+
         @media (max-width: 1023px) {
             margin-bottom: 0;
-            margin-right: 24px;
+            margin-right: 2.4rem;
         }
     }
 
@@ -69,12 +79,14 @@
     &__item-descr {
         @extend %robo-text;
         text-align: center;
+
         @media (max-width: 1023px) {
             text-align: left;
         }
+
         @media (max-width: 679px) {
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
         }
     }
 }

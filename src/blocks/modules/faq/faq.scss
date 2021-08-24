@@ -1,5 +1,6 @@
 .faq {
     margin-bottom: 107px;
+
     @media (max-width: 679px) {
         display: none;
     }
@@ -12,14 +13,14 @@
         }
     }
 
-    &__item + &__item {
-        border-top: 1px solid #1a1a1f;
+    &__item+&__item {
+        border-top: 0.1rem solid #1a1a1f;
     }
 
     // .faq__question
 
     &__question {
-        padding: 19px 24px;
+        padding: 1.9rem 2.4rem;
         background-color: $dark-bg;
         @extend %text;
         color: #fff;
@@ -31,8 +32,8 @@
     &__answer {
         display: none;
         background-color: #fff;
-        padding: 16px 24px;
+        padding: 1.6rem 2.4rem;
         @extend %roboto-14;
-        line-height: 20px;
+        line-height: 2rem;
     }
 }

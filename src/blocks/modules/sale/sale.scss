@@ -1,6 +1,6 @@
 .sale {
     &__title {
-        max-width: 488px;
+        max-width: 48.8rem;
     }
 
     &__cards {
@@ -9,7 +9,12 @@
         }
 
         .catalog-card {
-            margin-right: 24px;
+            margin: 0 1.2rem;
+
+            @media(max-width: 1023px) {
+                margin-left: 0;
+                margin-right: 2.4rem;
+            }
         }
     }
 }

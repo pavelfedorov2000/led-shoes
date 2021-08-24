@@ -1,7 +1,7 @@
 .head-foot {
     background-color: $dark-bg;
     color: #fff;
-    padding: 19px 0;
+    padding: 1.9rem 0;
     // .head-foot__inner
 
     &__inner {
@@ -12,8 +12,9 @@
 
     &__city {
         @extend %roboto-14;
-        line-height: 20px;
-        margin-left: 86px;
+        line-height: 2rem;
+        margin-left: 8.6rem;
+
         @media (max-width: 1023px) {
             display: none;
         }
@@ -27,8 +28,9 @@
     // .head-foot__call
 
     &__call {
-        margin-right: 33px;
+        margin-right: 3.3rem;
         margin-left: auto;
+
         @media (max-width: 1023px) {
             display: none;
         }
@@ -36,11 +38,16 @@
 
     &__btn {
         @media (max-width: 1023px) {
-            margin-right: 52px;
+            margin-right: 5.2rem;
             margin-left: auto;
         }
+
         @media (max-width: 679px) {
             display: none;
         }
     }
+}
+
+footer.head-foot {
+    padding: 0;
 }

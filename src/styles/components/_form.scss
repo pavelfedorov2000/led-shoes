@@ -1,8 +1,8 @@
 .form {
     // .form__item
 
-    &__item + &__item {
-        margin-top: 16px;
+    &__item+&__item {
+        margin-top: 1.6rem;
     }
 
     // .form__label
@@ -11,19 +11,20 @@
         display: block;
         @extend %text;
         color: #2f2f2f;
-        margin-bottom: 4px;
+        margin-bottom: 0.4rem;
     }
 
     // .form__input
 
     &__input {
         width: 100%;
-        border: 1px solid #070709;
-        border-radius: 4px;
-        padding: 10px 16px;
+        border: 0.1rem solid #070709;
+        border-radius: 0.4rem;
+        padding: 1rem 1.6rem;
         @extend %roboto-14;
-        line-height: 20px;
+        line-height: 2rem;
         color: rgba(35, 35, 42, 0.5);
+
         &::placeholder {
             color: rgba(35, 35, 42, 0.5);
         }
@@ -33,6 +34,6 @@
 
     &__btn {
         width: 100%;
-        margin-top: 32px;
+        margin-top: 3.2rem;
     }
 }

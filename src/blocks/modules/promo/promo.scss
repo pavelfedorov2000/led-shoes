@@ -1,17 +1,21 @@
 .promo {
     color: #fff;
-    padding-top: 43px;
+    padding-top: 4.3rem;
+
     @media (max-width: 679px) {
-        padding-top: 15px;
+        padding-top: 1.5rem;
     }
+
     // .promo__inner
 
     &__inner {
         @extend %flex-row-center;
-        margin-bottom: 155px;
+        margin-bottom: 15.5rem;
+
         @media (max-width: 1023px) {
-            margin-bottom: 63px;
+            margin-bottom: 6.3rem;
         }
+
         @media (max-width: 679px) {
             flex-direction: column;
         }
@@ -20,11 +24,13 @@
     // .promo__content
 
     &__content {
-        width: 431px;
+        width: 43.1rem;
         flex-shrink: 0;
+
         @media (max-width: 1023px) {
-            width: 304px;
+            width: 30.4rem;
         }
+
         @media (max-width: 679px) {
             width: 100%;
             order: 2;
@@ -34,24 +40,26 @@
     // .promo__title
 
     &__title {
-        font-size: 40px;
-        line-height: 48px;
-        margin-bottom: 24px;
+        font-size: 4rem;
+        line-height: 4.8rem;
+        margin-bottom: 2.4rem;
+
         @media (max-width: 1023px) {
-            font-size: 26px;
-            line-height: 38px;
+            font-size: 2.6rem;
+            line-height: 3.8rem;
         }
+
         @media (max-width: 679px) {
-            margin-bottom: 16px;
+            margin-bottom: 1.6rem;
         }
     }
 
     // .promo__subtitle
 
     &__subtitle {
-        max-width: 386px;
+        max-width: 38.6rem;
         @extend %robo-text;
-        margin-bottom: 32px;
+        margin-bottom: 3.2rem;
     }
 
     // .promo__img
@@ -59,6 +67,7 @@
     &__img {
         max-width: 100%;
         height: auto;
+
         @media (max-width: 679px) {
             order: 1;
         }
@@ -66,7 +75,7 @@
 
     &__btn {
         @media (max-width: 679px) {
-            width: 264px;
+            width: 26.4rem;
         }
     }
 
@@ -74,28 +83,31 @@
 
     &__benefits {
         background-color: $dark-bg;
-        padding: 22px 0;
+        padding: 2.2rem 0;
+
         @media (max-width: 1023px) {
-            padding: 28px 0;
+            padding: 2.8rem 0;
         }
     }
 
     &__benefits-list {
         @extend %flex-row;
+
         @media (max-width: 1023px) {
             flex-wrap: wrap;
-            grid-row-gap: 32px;
+            grid-row-gap: 3.2rem;
         }
+
         @media (max-width: 575px) {
-            grid-row-gap: 24px;
+            grid-row-gap: 2.4rem;
         }
     }
 
     // .promo__item-img
 
     &__item-img {
-        width: 40px;
-        height: 40px;
+        width: 4rem;
+        height: 4rem;
     }
 
     // .promo__item
@@ -103,9 +115,11 @@
     &__item {
         @extend %vertical-align;
         color: #fff;
+
         @media (max-width: 1023px) {
             width: 50%;
         }
+
         @media (max-width: 575px) {
             width: 100%;
         }
@@ -114,8 +128,8 @@
     // .promo__item-descr
 
     &__item-descr {
-        width: 160px;
+        width: 16rem;
         @extend %robo-text;
-        margin-left: 16px;
+        margin-left: 1.6rem;
     }
 }

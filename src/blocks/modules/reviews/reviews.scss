@@ -1,32 +1,38 @@
 .reviews {
     @media (max-width: 679px) {
-        margin-bottom: 64px;
+        margin-bottom: 6.4rem;
     }
+
     &__title {
         @media (max-width: 1023px) {
-            margin-left: 25px;
+            margin-left: 2.5rem;
         }
+
         @media (max-width: 679px) {
-            margin-left: 28px;
+            margin-left: 2.8rem;
         }
     }
+
     &__slider {
         @media (max-width: 1023px) {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 32px 24px;
-            margin: 0 25px;
+            grid-gap: 3.2rem 2.4rem;
+            margin: 0 2.5rem;
         }
+
         @media (max-width: 575px) {
-            width: 304px;
+            width: 30.4rem;
             grid-template-columns: 1fr;
-            margin-left: 30px;
+            margin-left: 3rem;
             margin-right: 0;
         }
+
         .slick-list {
             overflow: visible;
         }
     }
+
     .container {
         padding: 0;
     }
@@ -39,11 +45,13 @@
         height: fit-content;
         background-color: #ffffff;
         border-radius: 8px;
-        padding: 24px 24px 16px 24px;
-        margin: 0 12px;
+        padding: 2.4rem 2.4rem 1.6rem 2.4rem;
+        margin: 0 1.2rem;
+
         @media (max-width: 1023px) {
             display: none;
             margin: 0;
+
             &:nth-child(1),
             &:nth-child(2),
             &:nth-child(3),
@@ -51,9 +59,11 @@
                 display: block;
             }
         }
+
         &.slick-slide {
-            width: 304px;
+            width: 30.4rem;
             opacity: 0.35;
+
             &.slick-active {
                 box-shadow: 0px 8px 16px #131315;
                 opacity: 1;
@@ -65,7 +75,7 @@
 
     &__item-head {
         @extend %vertical-align;
-        margin-bottom: 16px;
+        margin-bottom: 1.6rem;
     }
 
     // .reviews-slider__item-img
@@ -79,21 +89,21 @@
 
     &__social-link {
         position: absolute;
-        top: -8px;
-        left: -8px;
+        top: -0.8rem;
+        left: -0.8rem;
     }
 
     // .reviews-slider__social-img
 
     &__social-img {
-        width: 32px;
-        height: 32px;
+        width: 3.2rem;
+        height: 3.2rem;
     }
 
     // .reviews-slider__item-info
 
     &__item-info {
-        margin-left: 24px;
+        margin-left: 2.4rem;
     }
 
     // .reviews-slider__item-name
@@ -101,27 +111,27 @@
     &__item-name {
         @extend %text;
         color: #1a1a1f;
-        margin-bottom: 4px;
+        margin-bottom: 0.4rem;
     }
 
     // .reviews-slider__item-city
 
     &__item-city {
         @extend %roboto-14;
-        line-height: 26px;
+        line-height: 2.6rem;
     }
 
     p {
         @extend %roboto-14;
-        line-height: 20px;
-        margin-bottom: 24px;
+        line-height: 2rem;
+        margin-bottom: 2.4rem;
     }
 
     // .reviews-slider__item-date
 
     &__item-date {
         @extend %roboto-14;
-        line-height: 26px;
+        line-height: 2.6rem;
         color: $gray-text;
     }
 }
